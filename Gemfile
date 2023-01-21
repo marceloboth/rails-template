@@ -21,23 +21,23 @@ gem 'turbo-rails'
 gem 'devise'
 
 group :development, :test do
+  gem 'capybara'
   gem 'pry-meta'
   gem 'rspec-rails', '~> 4.0.0'
-  gem 'capybara'
 end
 
 group :development do
   gem 'web-console', '>= 4.1.0'
 
-  gem 'foreman', require: false
   gem 'brakeman'
   gem 'bundler-audit'
-  gem 'ruby_audit'
+  gem 'foreman', require: false
   gem 'rubocop', require: false
   gem 'rubocop-packaging', require: false
   gem 'rubocop-performance', require: false
   gem 'rubocop-rails', require: false
   gem 'rubocop-rspec', require: false
+  gem 'ruby_audit'
 end
 
 group :test do
